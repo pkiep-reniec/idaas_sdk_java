@@ -8,7 +8,7 @@
     <packaging>jar</packaging>
 
     <name>pe.gob.reniec.idaas:idaas_sdk_java</name>
-    <url>https://pki.reniec.gob.pe/developers</url>
+    <url>https://idp-pre.reniec.gob.pe/site</url>
     <description>SDK for fast integration with our IDaaS based in OpenID Connect</description>
 
     <scm>
