@@ -10,10 +10,10 @@ Integration example:
 https://github.com/pkiep-reniec/integration_java_example
 
 More project details:
-https://idaas.reniec.gob.pe/site/
+https://idaas.reniec.gob.pe/
 
 Demo online:
-https://dsp.reniec.gob.pe/rp/
+https://ecep.reniec.gob.pe/rp/
 
 ## Basic params
 #### Scopes
