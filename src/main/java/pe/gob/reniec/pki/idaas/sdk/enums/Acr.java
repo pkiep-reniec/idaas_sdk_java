@@ -15,7 +15,9 @@ public enum Acr {
     ONLY_PASSWORD("only_password"),
     ONLY_QUESTIONS("only_questions"),
     PKI_DNIE_MOBILE("pki_dnie_mobile"),
-    FINGERPRINT_MOBILE("fingerprint_mobile");
+    FINGERPRINT_MOBILE("fingerprint_mobile"),
+    PKI_DNIE_LEGACY("pki_dnie_legacy"),
+    PKI_TOKEN_LEGACY("pki_token_legacy ");
 
     private String value;
     private static final Map<String, Acr> lookup = new HashMap<>();
