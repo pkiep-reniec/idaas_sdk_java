@@ -9,10 +9,14 @@ import java.util.Arrays;
  */
 public class Config {
 
+    @JsonProperty("issuer")
+    private String issuer;
     @JsonProperty("client_id")
     private String clientId;
     @JsonProperty("client_secret")
     private String clientSecret;
+    @JsonProperty("federation_id")
+    private String federationId;
     @JsonProperty("auth_uri")
     private String authUri;
     @JsonProperty("token_uri")
@@ -28,6 +32,17 @@ public class Config {
     @JsonProperty("javascript_origins")
     private String[] originUris;
 
+    public Config() {
+    }
+
+    public String getIssuer() {
+        return issuer;
+    }
+
+    public void setIssuer(String issuer) {
+        this.issuer = issuer;
+    }
+
     public String getClientId() {
         return clientId;
     }
@@ -42,6 +57,14 @@ public class Config {
 
     public void setClientSecret(String clientSecret) {
         this.clientSecret = clientSecret;
+    }
+
+    public String getFederationId() {
+        return federationId;
+    }
+
+    public void setFederationId(String federationId) {
+        this.federationId = federationId;
     }
 
     public String getAuthUri() {
@@ -102,12 +125,15 @@ public class Config {
 
     @Override
     public String toString() {
-        return "Config {" +
-                "clientId='" + clientId + '\'' +
+        return "Config{" +
+                "issuer='" + issuer + '\'' +
+                ", clientId='" + clientId + '\'' +
                 ", clientSecret='" + clientSecret + '\'' +
+                ", federationId='" + federationId + '\'' +
                 ", authUri='" + authUri + '\'' +
                 ", tokenUri='" + tokenUri + '\'' +
                 ", userInfoUri='" + userInfoUri + '\'' +
+                ", logoutUri='" + logoutUri + '\'' +
                 ", keysUri='" + keysUri + '\'' +
                 ", redirectUris=" + Arrays.toString(redirectUris) +
                 ", originUris=" + Arrays.toString(originUris) +
