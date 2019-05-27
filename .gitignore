@@ -3,7 +3,4 @@
 *.iml
 release.properties
 pom.xml.releaseBackup
-src/main/resources/app.properties
-src/main/resources/reniec_idaas.json
-src/test/resources/app.properties
-src/test/resources/reniec_idaas.json
+reniec_idaas.json
