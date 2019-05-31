@@ -7,7 +7,7 @@
     <version>1.0.8-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>pe.gob.reniec.idaas:idaas_sdk_java</name>
+    <name>com.github.pkiep-reniec:idaas_sdk_java</name>
     <url>https://idp-pre.reniec.gob.pe/site</url>
     <description>SDK for fast integration with our IDaaS based in OpenID Connect</description>
 
@@ -117,7 +117,6 @@
                 <configuration>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                     <useReleaseProfile>false</useReleaseProfile>
-                    <!--<autoReleaseAfterClose>true</autoReleaseAfterClose>-->
                     <goals>deploy</goals>
                 </configuration>
             </plugin>
