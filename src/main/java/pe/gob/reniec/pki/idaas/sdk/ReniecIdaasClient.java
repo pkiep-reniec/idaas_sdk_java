@@ -19,10 +19,7 @@ import pe.gob.reniec.pki.idaas.sdk.utils.ConvertResponse;
 import pe.gob.reniec.pki.idaas.sdk.utils.MySSLConnectionSocketFactory;
 import pe.gob.reniec.pki.idaas.sdk.utils.UrlQueryString;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.StringWriter;
+import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Base64;
@@ -46,6 +43,11 @@ public class ReniecIdaasClient {
     public ReniecIdaasClient(String configFile) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
         config = mapper.readValue(new File(configFile), Config.class);
+    }
+
+    public ReniecIdaasClient(InputStream configFile) throws IOException {
+        ObjectMapper mapper = new ObjectMapper();
+        config = mapper.readValue(configFile, Config.class);
     }
 
     public String getLoginUrl() {
