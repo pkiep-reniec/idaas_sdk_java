@@ -17,6 +17,8 @@ public class TokenResponse {
     private String idToken;
     @JsonProperty("refresh_token")
     private String refreshToken;
+    @JsonProperty("payload")
+    private String payload;
     private IdToken idTokenObject;
 
     public String getTokenType() {
@@ -67,11 +69,24 @@ public class TokenResponse {
         this.idTokenObject = idTokenObject;
     }
 
+    public String getPayload() {
+        return payload;
+    }
+
+    public void setPayload(String payload) {
+        this.payload = payload;
+    }
+
     @Override
     public String toString() {
         return "TokenResponse{" +
-                "accessToken='" + accessToken + '\'' +
+                "tokenType='" + tokenType + '\'' +
+                ", accessToken='" + accessToken + '\'' +
+                ", expiresIn=" + expiresIn +
                 ", idToken='" + idToken + '\'' +
+                ", refreshToken='" + refreshToken + '\'' +
+                ", payload='" + payload + '\'' +
+                ", idTokenObject=" + idTokenObject +
                 '}';
     }
 }

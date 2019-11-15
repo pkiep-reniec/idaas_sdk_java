@@ -1,5 +1,6 @@
 package pe.gob.reniec.pki.idaas.sdk.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
@@ -7,6 +8,7 @@ import java.util.List;
 /**
  * @author Miguel Pazo (http://miguelpazo.com)
  */
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class IdToken {
 
     @JsonProperty("acr")
@@ -183,5 +185,4 @@ public class IdToken {
                 ", chash='" + chash + '\'' +
                 '}';
     }
-
 }

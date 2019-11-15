@@ -110,6 +110,8 @@ public class ReniecIdaasClient {
 
             try {
                 String[] parts = tokenResponse.getIdToken().split("\\.");
+                tokenResponse.setPayload(new String(Base64.getDecoder().decode(parts[1])));
+
                 ObjectMapper objectMapper = new ObjectMapper();
                 idToken = objectMapper.readValue(new String(Base64.getDecoder().decode(parts[1]), "UTF-8"), IdToken.class);
             } catch (Exception ex) {
