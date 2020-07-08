@@ -9,7 +9,7 @@
 
     <name>com.github.pkiep-reniec:idaas_sdk_java</name>
     <url>https://idp-pre.reniec.gob.pe/site</url>
-    <description>SDK for fast integration with our IDaaS based in OpenID Connect</description>
+    <description>SDK for fast integration with our ID Perú based in OpenID Connect</description>
 
     <scm>
         <url>scm:git:git@github.com:pkiep-reniec/idaas_sdk_java.git</url>
