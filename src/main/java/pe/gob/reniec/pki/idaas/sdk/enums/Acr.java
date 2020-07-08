@@ -8,14 +8,9 @@ import java.util.Map;
  */
 public enum Acr {
 
-    ONE_FACTOR("one_factor"),
-    TWO_FACTOR("two_factor"),
     PKI_DNIE("pki_dnie"),
     PKI_TOKEN("pki_token"),
-    ONLY_PASSWORD("only_password"),
-    ONLY_QUESTIONS("only_questions"),
     PKI_DNIE_MOBILE("pki_dnie_mobile"),
-    FINGERPRINT_MOBILE("fingerprint_mobile"),
     PKI_DNIE_LEGACY("pki_dnie_legacy"),
     PKI_TOKEN_LEGACY("pki_token_legacy");
 

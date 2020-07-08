@@ -33,7 +33,7 @@ public class ReniecIdaasClient {
 
     private String redirectUri = null;
     private List<Scope> lstScopes = new ArrayList<>();
-    private Acr acr = Acr.ONE_FACTOR;
+    private Acr acr = Acr.PKI_DNIE;
     private Prompt prompt = null;
     private Integer maxAge = null;
     private String state = null;

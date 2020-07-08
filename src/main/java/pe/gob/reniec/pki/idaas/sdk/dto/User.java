@@ -11,18 +11,13 @@ public class User {
     private String doc;
     @JsonProperty("first_name")
     private String firstName;
-    @JsonProperty("phone_number")
-    private String phoneNumber;
-    @JsonProperty("phone_number_verified")
-    private Boolean phoneNumberVerified;
-    @JsonProperty("email")
-    private String email;
-    @JsonProperty("email_verified")
-    private Boolean emailVerified;
     @JsonProperty("ruc")
     private String ruc;
     @JsonProperty("sub")
     private String sub;
+
+    public User() {
+    }
 
     public String getDoc() {
         return doc;
@@ -38,38 +33,6 @@ public class User {
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
-    public Boolean getPhoneNumberVerified() {
-        return phoneNumberVerified;
-    }
-
-    public void setPhoneNumberVerified(Boolean phoneNumberVerified) {
-        this.phoneNumberVerified = phoneNumberVerified;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public Boolean getEmailVerified() {
-        return emailVerified;
-    }
-
-    public void setEmailVerified(Boolean emailVerified) {
-        this.emailVerified = emailVerified;
     }
 
     public String getRuc() {
@@ -93,10 +56,6 @@ public class User {
         return "User{" +
                 "doc='" + doc + '\'' +
                 ", firstName='" + firstName + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
-                ", phoneNumberVerified=" + phoneNumberVerified +
-                ", email='" + email + '\'' +
-                ", emailVerified=" + emailVerified +
                 ", ruc='" + ruc + '\'' +
                 ", sub='" + sub + '\'' +
                 '}';

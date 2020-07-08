@@ -8,8 +8,6 @@ import java.util.Map;
  */
 public enum Scope {
     PROFILE("profile"),
-    EMAIL("email"),
-    PHONE("phone"),
     OFFLINE_ACCESS("offline_access");
 
     private String value;

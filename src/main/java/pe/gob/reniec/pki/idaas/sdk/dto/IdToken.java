@@ -21,14 +21,6 @@ public class IdToken {
     private String doc;
     @JsonProperty("first_name")
     private String firstName;
-    @JsonProperty("email")
-    private String email;
-    @JsonProperty("email_verified")
-    private Boolean emailVerified;
-    @JsonProperty("phone_number")
-    private String phoneNumber;
-    @JsonProperty("phone_number_verified")
-    private Boolean phoneNumberVerified;
     @JsonProperty("exp")
     private Integer exp;
     @JsonProperty("iat")
@@ -83,38 +75,6 @@ public class IdToken {
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public Boolean getEmailVerified() {
-        return emailVerified;
-    }
-
-    public void setEmailVerified(Boolean emailVerified) {
-        this.emailVerified = emailVerified;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
-    public Boolean getPhoneNumberVerified() {
-        return phoneNumberVerified;
-    }
-
-    public void setPhoneNumberVerified(Boolean phoneNumberVerified) {
-        this.phoneNumberVerified = phoneNumberVerified;
     }
 
     public Integer getExp() {
@@ -173,10 +133,6 @@ public class IdToken {
                 ", sub='" + sub + '\'' +
                 ", doc='" + doc + '\'' +
                 ", firstName='" + firstName + '\'' +
-                ", email='" + email + '\'' +
-                ", emailVerified=" + emailVerified +
-                ", phoneNumber='" + phoneNumber + '\'' +
-                ", phoneNumberVerified=" + phoneNumberVerified +
                 ", exp=" + exp +
                 ", iat=" + iat +
                 ", iss='" + iss + '\'' +
